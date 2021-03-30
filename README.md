@@ -25,6 +25,7 @@ Para este projeto foi utilizado o helper do WebDriver.
     npx codeceptjs run --features --steps
     ```
 # Sobre o CodeceptJS
+> [Comunidade do CodeceptJS para compartilhamento de conhecimento](https://codecept.discourse.group/)
 
 ## Instalação
 1. Dentro da pasta que deseja criar o projeto de automação execute
