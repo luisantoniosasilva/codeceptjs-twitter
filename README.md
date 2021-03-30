@@ -26,7 +26,7 @@ Para este projeto foi utilizado o helper do WebDriver.
     ```
 # Sobre o CodeceptJS
 
-## Instração
+## Instalação
 1. Dentro da pasta que deseja criar o projeto de automação execute
    ```bash
    npm init -y
@@ -63,3 +63,7 @@ Para este projeto foi utilizado o helper do WebDriver.
    ```
    
 É possível verificar outras formas de instalação através do [manual de instação](https://github.com/codeceptjs/create-codeceptjs) fornecido pelo CodeceptJS.
+
+## Packages utilizados
+- [codeceptjs-chai](https://www.npmjs.com/package/codeceptjs-chai): Utilizado para realização de asserções
+- [@wdio/selenium-standalone-service](https://www.npmjs.com/package/@wdio/selenium-standalone-service): Auxilia para não precisar execular o selenium a parte do projeto
