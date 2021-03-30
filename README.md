@@ -2,7 +2,7 @@
 Uma aplicação de teste automatizado na plataforma web do Twitter desenvolvida com o framework [CodeceptJS](https://codecept.io/).
 > **⚠ Observação:** Neste projeto poderá conter algumas informações divergentes e más práticas referente ao framework devido ao fato de eu estar iniciando o estudos a respeito do CodeceptJS
  
- ## Sobre
+ # Sobre o Projeto
 Este projeto está sendo desenvolvido como meio de estudo do framework [CodeceptJS](https://codecept.io/). Um framework de teste end to end com uma sintaxe similar ao BDD (Behavior Driven Development).
 Para este projeto foi utilizado o helper do WebDriver.
 
@@ -24,3 +24,42 @@ Para este projeto foi utilizado o helper do WebDriver.
     ```bash 
     npx codeceptjs run --features --steps
     ```
+# Sobre o CodeceptJS
+
+## Instração
+1. Dentro da pasta que deseja criar o projeto de automação execute
+   ```bash
+   npm init -y
+   ```
+2. ```bash
+   npm install codeceptjs webdriverio --save-dev
+   ```
+3. ```bash
+   npx codeceptjs init
+   ```
+4. ```bash
+   npm install @wdio/selenium-standalone-service --save-dev
+   ```
+5. Dentro do arquivo codecept.conf.js que foi criado com os passos anteriores, dentro do bloco de código plugins, adicione o bloco de código abaixo
+
+    ```jsx
+    wdio: { 
+          enabled: true,
+          services: ['selenium-standalone'] 
+        }
+    ```
+
+6. Para executar em modo headless execute o comando
+   ```bash
+   npx codeceptjs run
+   ```
+7. Para executar através da UI deveremos primeiro instalar a UI do CodeceptJS através do comando
+   ```bash
+   npm i @codeceptjs/ui --save
+   ```
+8. E executar o comando
+   ```bash
+   npx codecept-ui --app
+   ```
+   
+É possível verificar outras formas de instalação através do [manual de instação](https://github.com/codeceptjs/create-codeceptjs) fornecido pelo CodeceptJS.
